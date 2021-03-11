@@ -45,6 +45,7 @@ h3 {
 				<th scope="col"><i class="fa fa-gbp"></i> Price</th>
 				<th>Status</th>
 				<th scope="col">Edit <i class='fas fa-pen-fancy'></i></th>
+				<th scope="col">Remove <i class='fas fa-trash-alt'></i></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -63,6 +64,8 @@ h3 {
 				<td><%=rs.getString(5)%></td>
 				<td><a href="editProduct.jsp?id=<%=rs.getString(1)%>">Edit
 						<i class='fas fa-pen-fancy'></i>
+				<td><a href="removeProduct.jsp?id=<%=rs.getString(1)%>">Remove
+						<i class='fas fa-trash-alt'></i>
 				</a></td>
 			</tr>
 
